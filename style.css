@@ -1,0 +1,937 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    background-color: rgba(229, 229, 229, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 1);
+    width: 1440px;
+    height: 5050px;
+}
+
+.grid {
+    width: 1440px;
+    display: grid;
+    grid-template-rows: 29px 66px 810px 83px;
+}
+
+.grids1 {
+    background-color: rgba(0, 0, 0, 1);
+    width: 1440px;
+    height: 29px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grids1 .p0 {
+    color: rgba(251, 251, 251, 1);
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    font-weight: 400;
+}
+
+.ul1 {
+    width: 1440px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+}
+
+.ul1 .li1 {
+    margin-left: 23px;
+}
+
+.ul1 .li1:nth-child(2) {
+    margin-left: 102px;
+}
+
+.ul1 .li1:nth-child(7) {
+    margin-left: 388.54px;
+}
+
+.ul1 .li1:nth-child(8) {
+    margin-left: 11.8px;
+}
+
+.p1 a {
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.p1 a:hover {
+    color: rgb(139, 4, 4);
+}
+
+.pinput {
+    cursor: pointer;
+}
+
+.grids3 {
+    position: relative;
+}
+
+.grids3 .content {
+    width: 635px;
+    height: 160px;
+    position: absolute;
+    top: 45px;
+    left: 402px;
+    text-align: center;
+}
+
+.content .pwelcom {
+    color: rgba(0, 0, 0, 1);
+    font-size: 44px;
+    line-height: 50.6px;
+    font-weight: 400;
+}
+
+.content .pholy {
+    margin-top: 19px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 15px;
+    line-height: 18.8px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.content .bt {
+    margin-top: 22px;
+    background-color: rgba(255, 74, 50, 1);
+    width: 201px;
+    height: 33px;
+    border-radius: 35px;
+    border: none;
+}
+
+.content .btright {
+    margin-left: 12px;
+}
+
+.content .bt a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    letter-spacing: 0;
+}
+
+.grids4 {
+    background-color: rgba(0, 0, 0, 1);
+    width: 1440px;
+    height: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grids4 .ul2 {
+    width: 1200px;
+    height: 48px;
+    display: flex;
+    justify-content: space-around;
+}
+
+               /* Выпадание картинок бренда */
+/* 
+.li2 {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 2s;
+}
+
+.anim.li2.active {
+    transform: translateY(0);
+    opacity: 1;
+} */
+
+.li01 {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.anim.li01.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.li02 {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 2s;
+}
+
+.anim.li02.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.li03 {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 3s;
+}
+
+.anim.li03.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.li04 {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 4s;
+}
+
+.anim.li04.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.content2 {
+    position: relative;
+    width: 700px;
+    height: 183.25px;
+    margin-top: 30.36px;
+    margin-left: 370px;
+    text-align: center;
+}
+
+.content2::before {
+    content: "";
+    position: absolute;
+    left: 315px;
+    bottom: 24px;
+    width: 70px;
+    height: 2px;
+    background-color: rgba(207, 207, 207, 1);
+}
+
+.content2 .plooking {
+    color: rgba(0, 0, 0, 1);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.content2 .pboosted {
+    color: rgba(0, 0, 0, 1);
+    margin-top: 17px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.8px;
+}
+
+.box1 {
+    margin-top: 20.61px;
+    margin-left: 130px;
+    width: 1200px;
+    height: 580px;
+    display: grid;
+    grid-template-columns: repeat(2, 580px);
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.grid2 {
+    position: relative;
+}
+
+                  /* Соединение двух бкартинок */
+
+.grid2left {
+    /* transform: translateY(100%); */
+    transform-origin: top left;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: all 1.2s;
+}
+
+.anim.grid2.active {
+    /* transform: translateY(0); */
+    transform: rotate(0);
+    opacity: 1;
+}
+
+.grid2right {
+    /* transform: translateX(100%); */
+    transform-origin: top right;
+    transform: rotate(-45deg);
+    opacity: 0;
+    transition: all 1.2s;
+}
+
+.anim.grid2.grid2right.active {
+    /* transform: translateX(0); */
+    transform: rotate(0);
+    opacity: 1;
+}
+
+.contents {
+    position: absolute;
+    top: 223px;
+    left: 169px;
+    width: 245px;
+    height: 150px;
+    text-align: center;
+}
+
+.contents .pshop {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.contents .pin {
+    margin-top: 14px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.4px;
+}
+
+.box2 {
+    position: relative;
+    margin-top: 20.39px;
+    width: 1440px;
+    height: 736px;
+}
+
+.content3 {
+    position: absolute;
+    top: 44px;
+    left: 438px;
+    width: 564px;
+    height: 199px;
+    text-align: center;
+}
+
+.content3 .phigh {
+    color: rgba(0, 0, 0, 1);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.8px;
+    letter-spacing: 1px;
+}
+
+.content3 .pelectric {
+    margin-top: 11px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 50.6px;
+    letter-spacing: 0px;
+}
+
+.content3 .pcampus {
+    margin-top: 14px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.8px;
+    letter-spacing: 1px;
+}
+
+.content3 .btnow {
+    background-color: rgba(255, 74, 50, 1);
+    margin-top: 20px;
+    width: 201px;
+    height: 33px;
+    border-radius: 35px;
+    border: none;
+}
+
+.content3 .btnow a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22.5px;
+}
+
+.box3 {
+    margin-top: 45px;
+    margin-left: 120px;
+    width: 1200px;
+    height: 379.98px;
+    display: grid;
+    grid-template-columns: repeat(2, 380px auto);
+    column-gap: 20px;
+}
+
+              /* Анимация сдвигов картинок */
+
+.divgridleft {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 2s;
+}             
+
+.anim.divgridleft.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.divgridright {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 1s;
+}  
+
+.anim.divgridright.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.divgridcenter {
+    transform: translateX(0);
+    opacity: 0;
+    transition: all 2.5s ease-in;
+}
+
+.anim.divgridcenter.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.boostedrev {
+    margin-top: 67.48px;
+    margin-left: 19px;
+    width: 339.98px;
+    height: 245.75px;
+}
+
+.boostedrev .prev {
+    color: rgba(0, 0, 0, 1);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.4px;
+}
+
+.boostedrev .pnever {
+    margin-top: 22px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+
+.boostedrev .btshop {
+    margin-top: 18px;
+    background-color: rgba(255, 74, 50, 1);
+    width: 101px;
+    height: 33px;
+    border-radius: 35px;
+    border: none;
+}
+
+.btshop a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+            
+                /* Go-Up */
+
+.goup {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    left: 20px;
+    top: 80%;
+    z-index: 100;
+    background-color: rgb(172, 172, 172);
+    width: 35px;
+    height: 38px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.goupshow {
+    display: flex;
+}
+
+.goup:hover {
+    background-color: grey;
+}
+
+.imgarrowup {
+    width: 100%;
+}
+
+.box4 {
+    margin-top: 45px;
+    width: 1440px;
+    height: 479.98px;
+    display: grid;
+    grid-template-columns: repeat(3, 479.98px);
+}
+            
+             /* Появление картинок */
+
+.divgrid2 {
+    position: relative;
+    transform: scale(0.1);
+    opacity: 1;
+    transition: all 2s ease;
+}
+
+.anim.divgrid2.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.grid1 {
+    position: absolute;
+    top: 208px;
+    left: 119px;
+    width: 241px;
+    height: 75px;
+    text-align: center;
+}
+
+.grid1 .pboosted {
+    color: rgba(255, 255, 255, 1);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.grid1 .pstock {
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.4px;
+}
+
+.divvideo {
+    margin-top: 45px;
+    margin-left: 140px;
+    width: 1160px;
+    height: 322px;
+    display: grid;
+    grid-template-columns: repeat(2, 540px);
+    column-gap: 60px;
+}
+
+iframe {
+    box-shadow: 0 0 4px rgb(18, 18, 18);
+}
+
+.divlooking {
+    position: relative;
+    margin-top: 55px;
+    width: 1440px;
+    height: 60.5px;
+    text-align: center;
+}
+
+.divlooking::before {
+    content: "";
+    position: absolute;
+    left: 675px;
+    bottom: 2px;
+    width: 70px;
+    height: 2px;
+    background-color: rgba(207, 207, 207, 1);
+}
+
+.divlooking .plookin {
+    color: black;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.carusel {
+    position: relative;
+    margin-top: 40px;
+    width: 1440px;
+    height: 300px;
+}
+
+.btleft {
+    position: absolute;
+    left: 10px;
+    bottom: 40%;
+    background-color: rgba(217, 217, 217, 0.457);
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    text-align: center;
+    align-content: center;
+}
+
+.btrigh {
+    position: absolute;
+    right: 10px;
+    bottom: 40%;
+    background-color: rgba(217, 217, 217, 0.457);
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    transform: rotate(180deg);
+    text-align: center;
+    align-content: center;
+}
+
+.bt0:hover {
+    cursor: pointer;
+    background-color: rgba(217, 217, 217, 0.756);
+}
+
+.slider {
+    margin-left: 6px;
+    width: auto;
+    height: 310px;
+    display: grid;
+    grid-template-columns: repeat(14, 185.7px);
+    column-gap: 20px;
+    overflow-x: scroll;
+}
+
+.slider .card {
+    background-color: rgba(239, 239, 239, 0.578);
+    width: 185.7px;
+    height: 237.7px;
+    text-align: center;
+    border: 2px solid rgba(255, 0, 0, 0.162);
+    border-radius: 5px;
+}
+
+.card img {
+    border-radius: 5px;
+}
+
+.slider::-webkit-scrollbar {
+    overflow-x: hidden; 
+}  
+
+.ptitle {
+    margin-top: 5px;
+    color: rgba(255, 74, 50, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.spanblack {
+    font-size: 14px;
+}
+
+.spanwith {
+    color: rgb(151, 151, 151);
+}
+
+.spanred {
+    color: rgba(255, 74, 50, 1);
+    margin-left: 4px;
+    font-size: 14px;
+}
+
+.box5 {
+    background-color: rgba(0, 0, 0, 1);
+    margin-top: 5px;
+    width: 1440px;
+    height: 308px;
+    display: grid;
+    grid-template-columns: repeat(4, 330px);
+    column-gap: 20px;
+    justify-content: center;
+}
+
+                /* Выпадание текстов  */
+
+.divgridleft {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 2.3s ease;
+}
+
+.anim.divgridleft.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.divgridright {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 2.3s ease;
+}
+
+.anim.divgridright.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.divgridbottom {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.anim.divgridbottom.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.divgrid3 {
+    align-content: center;
+    text-align: center;
+}
+
+.divgrid3 .pt {
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.divgrid3 .ptext {
+    margin-top: 25px;
+    margin-left: 30px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    width: 270px;
+    height: 68px;
+    text-align: center;
+}
+
+.footer {
+    width: 1440px;
+    display: grid;
+    grid-template-columns: 1440px;
+    grid-template-rows: 329px 70px;
+}
+
+.divfooters1 {
+   width: 1440px;
+   height: 329px;
+   display: flex;
+   justify-content: center;
+}
+
+.footercontent {
+    margin-top: 20px;
+    width: 1200px;
+    height: 289px;
+    display: grid;
+    grid-template-columns: repeat(3, 379.98px);
+    justify-content: space-between;
+}
+
+.imglogo {
+    margin-top: 29.91px;
+    margin-left: 10px;
+}
+
+.ptitles {
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.pexplor {
+    margin-top: 7px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.pabout {
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.pcontent {
+    margin-top: 7px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.pcalirides {
+    margin-top: 19px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.pcalirides1 {
+    margin-top: 7px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.divfooters2 {
+    display: flex;
+    justify-content: center;
+}
+
+.footer3 {
+    width: 1200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.pfooter {
+    margin-left: 10px;
+}
+
+.pfooter span {
+    color: rgba(255, 74, 50, 1);
+}
+
+.imgcart {
+    width: 332px;
+    height: 30px;
+    margin-left: 345px;
+    display: flex;
+    align-items: center;
+}
+
+.imgcart img {
+    margin-left: 5px;
+}
+
+.popbg {
+    background-color: rgba(0, 0, 0, 0.808);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.popupOpen {
+    display: flex;
+}
+
+.conteiners {
+    position: relative;
+    background-image: url(img/Rectangle2.png);
+    background-size: contain;
+    width: 800px;
+    height: 600px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiners form {
+    margin-top: 30px;
+    background-image: linear-gradient(to top, rgb(235, 215, 215), rgb(182, 182, 211));
+    box-shadow: 0 0 10px rgb(94, 111, 155);
+    width: 400px;
+    height: 350px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteiners form input {
+    width: 350px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: "Roboto";
+    margin-top: 25px;
+    border-radius: 6px;
+}
+
+.btinput {
+    color: white;
+    cursor: pointer;
+    background-color: rgba(255, 74, 50, 1);
+    transition: all 0.4s;
+}
+
+.btinput:hover {
+    width: 80%;
+    background-color: rgb(11, 193, 20);
+}
+
+.buttons {
+    cursor: pointer;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: rgb(196, 196, 196);
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.buttons:hover {
+    background-color: rgb(152, 152, 152);
+}
+
+.buttons span {
+    position: absolute;
+    top: 14px;
+    left: 7.5px;
+    background-color: rgb(255, 255, 255);
+    width: 15px;
+    height: 1px;
+}
+
+.sp1 {
+    transform: rotate(45deg);
+}
+
+.sp2 {
+    transform: rotate(-45deg);
+}
+
+
+
